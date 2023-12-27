@@ -311,3 +311,4 @@ def Longest_palindrome_word (names):
         if i == i[::-1] and len(i) == l:
             print(i)
 Longest_palindrome_word (names)
+print()
