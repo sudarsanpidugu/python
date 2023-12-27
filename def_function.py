@@ -305,6 +305,9 @@ def Longest_palindrome_word (names):
     newlst = []
     for i in names:
         if i == i[-1::-1]:
-            newlst.append(i)
-    print(max(newlst))
+            newlst.append(len(i))
+    l = max(newlst)
+    for i in names:
+        if i == i[::-1] and len(i) == l:
+            print(i)
 Longest_palindrome_word (names)
