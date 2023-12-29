@@ -1,0 +1,5 @@
+TCS,Ravi,Ram,Sudha,Siva,Basu
+WIPRO,Babu,Karthik,Sandesh,Teja,Kisan
+INOFSYS,Venky,Teja,Alber,Babu,Vijay
+GOOGLE,Sai,Mayuru,Aswini,Mounika,Neeraja
+NTH,Indhu,Supriya,Divya,Teja,Bhavani

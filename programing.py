@@ -157,7 +157,6 @@ print(newlst)
 '''
 
 # 16. Write a program to fetch all words which contains 'a' character in the string?
-'''
 st = 'Python is simple and easy language' #['and', 'easy', 'language']
 s = st.split()
 newlst = []
@@ -167,7 +166,7 @@ for i in s:
         newlst.append(i)
 print(newlst)
 
-'''
+
 
 # 17. Write a program to fetch all words which does not contain 'e' character in string?
 '''
