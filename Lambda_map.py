@@ -3,7 +3,7 @@ lst = [10,11,13,14,9,8] #[10,14,8]
 # print(list(map(lambda i : i%2 == 0,lst))) --------------------------------
 # 2. Write a program to fetch all string values from list? 
 lst = [10,'a',True,'b',False] #['a', 'b']
-
+print(list(map(lambda i: str(i) if isinstance(i, str) else '', lst)))
 # 3. Write a program to fetch all 5 divisibles from list? 
 lst = [12,15,27,20,5] #[15,20,5]
 # 4. Write a program to count total number of int values in the list?

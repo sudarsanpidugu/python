@@ -1,12 +1,12 @@
 # 1. Write a program to fetch all even numbers from list? 
-'''
+
 lst = [10,11,13,14,9,8] #[10,14,8]
 newlst = []
 for i in lst:
     if i%2 == 0:
         newlst.append(i)
 print(newlst)
-'''    
+   
 # 2. Write a program to fetch all string values from list?
 '''
 lst = [10,'a',True,'b',False] #['a', 'b']
