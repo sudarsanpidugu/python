@@ -1,0 +1,3 @@
+TCS,Sai,Rohit,Satya,Dhoni,Sarath,Saroj,Venkat,Sas
+INFOSYS,Kohli,Santosh,Venkat,Koti,Prabha,Soumya,Mishra
+WIPRO,Satya,Kohli,Ram,Chinna,Pop,Amelia,Suresh,Arjuna
