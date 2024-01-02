@@ -135,12 +135,13 @@
 #     if len(i)==5:
 #         z.append(i)
 # print(z)
-'''
+
 '''
 # 16. Write a program to fetch all words which does not contains vowels except i in the file?
 '''
 # print([k for k in open('file.txt').read().lower().replace('\n',',').split(',') if 'i' in k and 'a' not in k and 'e' not in k and 'u' not in k and 'o' not in k ])
-'''
+
+
 '''
 # 17. Write a program to fetch all words which ends with uppercase character in the file?
 '''
@@ -299,16 +300,16 @@
 # --------------------(or)----------------------
 # print([i.split(',')[0] for i in open('file.txt').readlines() if i.replace('\n','')[0] in 'aeiouAEIOU'])
 '''
-# 36. Write a program to display company name which contains Saroj Employee?
+36. Write a program to display company name which contains Saroj Employee?
 '''
 # print([i.split(',')[0] for i in open('file.txt').read().split('\n') if 'Saroj' in i])
 
 '''
-# 37. Write a program to count all words which starts and ends with consonants?
+37. Write a program to count all words which starts and ends with consonants?
 '''
 # print([i for i in open('file.txt').read().replace('\n',',').split(',') if i[0] not in 'AEIOUaeiou' and i[-1] not in 'AEIOUaeiou'])
 '''
-# 38. Write a program to fetch all company names which does not contain Venkat employee?
+38. Write a program to fetch all company names which does not contain Venkat employee?
 '''
 # print([i.split(',')[0] for i in open('file.txt').read().split('\n') if 'Venkat' not in i])
 
@@ -327,7 +328,17 @@
 '''
 # 41. Write a program to fetch all names whose name starts with 'a' in NTH company?
 '''
-# print([i for i in open('file.txt').read().replace('\n',',').split(',') if i == 'NTH' and i[0] in 'A' ])-----------?
+# a = [j for j in [i.split(',')[1:]  for i in open('file.txt').read().split('\n') if i.split(',')[0] == 'NTH' ]]
+
+# list = []
+# for k in a[0] :
+#     if k[0] in 'A' :
+#         list.append(k)
+# print(list)
+
+# --------------------(or)----------------------
+
+# print([k for k in [j for j in [i.split(',')[1:]  for i in open('file.txt').read().split('\n') if i.split(',')[0] == 'NTH' ]][0] if k[0] in 'A'] )
 
 '''
 # 42. Write a program to count total number of employees in CTS company?
@@ -360,7 +371,19 @@
 '''
 # 46. Write a program to fetch all companies names where palindrome named employees working?
 '''
+# a = ([i.lower().replace('\n','').split(',') for i in open('file.txt').readlines()])
+# print(a)
+# for i in a:
+    # if i[0] :
 
+# s=open('file.txt').read().split('\n')
+# l = []
+# for i in s:
+#     for j in i.split(','):
+#         if j == i[::-1]:
+#             l.append(j)
+#     print(j)
+    
 
 '''
 # 47. Write a program to fetch the lengthiest company name?
@@ -368,9 +391,9 @@
 # for i in [j for j in [i.split(',')[0] for i in open('file.txt').read().split('\n') if i.split(',')] ]:
 #     if len(i) == (max([len(j) for j in [i.split(',')[0] for i in open('file.txt').read().split('\n') if i.split(',')] ])):
 #         print(i)
-'''
+
 # 48. Write a program to fetch the lengthiest employee name in ABC company?
-'''
+
 # a = open('file.txt').read().replace('\n','').split(',')
 # print(a)
 # b = (max([len(j) for j in [i.split(',')[1:] for i in open('file.txt').read().split('\n') if i.split(',')[0] == 'WIPRO'][0] ]))
@@ -402,4 +425,6 @@
 # for i,j in zip(a, b):
 #     d[i] = j
 # print(d)
+
+
 
