@@ -81,7 +81,9 @@
 #         if j[0] in 'Aa':
 #             n.append(j)
 # print(n)
-# # --------------------(or)----------------------
+# --------------------(or)----------------------
+# print([i for i in open('file.txt').read().replace('\n',',').split(',') if i[0] in 'Aa'])
+# --------------------(or)----------------------
 # n = []
 # for i in open('file.txt').read().split('\n'):
 #     for j in i.split(','):
@@ -121,6 +123,9 @@
 #         if len(j) == 5:
 #             n.append(j)
 # print(n)
+
+# print([i for i in open('file.txt').read().replace('\n',',').split(',') if len(i) == 5])
+
 # --------------------(or)----------------------
 
 # x=open('file.txt','r')
@@ -130,35 +135,41 @@
 #     if len(i)==5:
 #         z.append(i)
 # print(z)
-
-
+'''
 '''
 # 16. Write a program to fetch all words which does not contains vowels except i in the file?
 '''
-# print([i for i in open('file.txt').read().replace('\n',',').split(',') if i[0] not in 'aeouAEOU'])
-
+# print([k for k in open('file.txt').read().lower().replace('\n',',').split(',') if 'i' in k and 'a' not in k and 'e' not in k and 'u' not in k and 'o' not in k ])
+'''
 '''
 # 17. Write a program to fetch all words which ends with uppercase character in the file?
 '''
-print([i[-1] for i in open('file.txt').read().replace('\n',',').split(',')])
+# print([i for i in open('file.txt').read().replace('\n',',').split(',') if i[-1].isupper()])
 '''
 # 18. Write a program to count total number of characters in the file excluding commas and \ns?
 '''
-
+# print(len(open('file.txt').read()))
+# --------------------(or)----------------------
+# print(sum([len(i) for i in open('file.txt').readlines()]))
 '''
 # 19. Write a program to count total number of words in the entire file?
 '''
+# print(len(open('file.txt').read().replace('\n',',').split(',')))
+# --------------------(or)----------------------
+# print(sum([len(i.replace('\n','').split(',')) for i in open('file.txt').readlines()]))
+
 '''
 # 20. Write a program to fetch all even number words from from every line the file?
 '''
-
+# print([i.replace('\n',',') for j in open('file.txt') for i in j.split(',') if len(i) % 2 == 0])
 '''
 # 21. Write a program to fetch all words which ends with 'bha' in the file?
 '''
-
+print([{i.replace('\n',',') for j in open('file.txt') for i in j.split(',') if i.endswith('bha')}])
 '''
 # 22. Write a program to display all TCS employees?
 '''
+
 '''
 # 23. Write a program to display the company name of Chinna Employee?
 '''
