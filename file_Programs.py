@@ -371,19 +371,8 @@
 '''
 # 46. Write a program to fetch all companies names where palindrome named employees working?
 '''
-# a = ([i.lower().replace('\n','').split(',') for i in open('file.txt').readlines()])
-# print(a)
-# for i in a:
-    # if i[0] :
+# print([i.split(',')[0] for i in open('file.txt').read().split('\n') for j in i.split(',') if j.lower() == j.lower()[-1::-1]])
 
-# s=open('file.txt').read().split('\n')
-# l = []
-# for i in s:
-#     for j in i.split(','):
-#         if j == i[::-1]:
-#             l.append(j)
-#     print(j)
-    
 
 '''
 # 47. Write a program to fetch the lengthiest company name?
