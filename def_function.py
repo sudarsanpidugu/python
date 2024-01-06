@@ -300,15 +300,15 @@ Fetch_all_palindrome_whichMorethen3_char (names)
 
 # 25. Write a Function to longest palindrome word? 
 
-names = ['madam', 'python','dad','language','eye','malayalam'] #['malayalam']
-def Longest_palindrome_word (names):
-    newlst = []
-    for i in names:
-        if i == i[-1::-1]:
-            newlst.append(len(i))
-    l = max(newlst)
-    for i in names:
-        if i == i[::-1] and len(i) == l:
-            print(i)
-Longest_palindrome_word (names)
-print()
+# names = ['madam', 'python','dad','language','eye','malayalam'] #['malayalam']
+# def Longest_palindrome_word (names):
+#     newlst = []
+#     for i in names:
+#         if i == i[-1::-1]:
+#             newlst.append(len(i))
+#     l = max(newlst)
+#     for i in names:
+#         if i == i[::-1] and len(i) == l:
+#             print(i)
+# Longest_palindrome_word (names)
+# print()

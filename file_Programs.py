@@ -405,15 +405,15 @@
 '''
 # 50. Write a program count total number of employees in each company(in dict format)?
 '''
-# b = (([len(j) for j in [i.split(',')[1:] for i in open('file.txt').read().split('\n') if i.split(',')] ]))
-# # print(b)
+b = (([len(j) for j in [i.split(',')[1:] for i in open('file.txt').read().split('\n') if i.split(',')] ]))
+# print(b)
 
-# a = ([(j) for j in [i.split(',')[0] for i in open('file.txt').read().split('\n') if i.split(',')] ])
-# # print(a)
-# d= {}
-# for i,j in zip(a, b):
-#     d[i] = j
-# print(d)
+a = ([(j) for j in [i.split(',')[0] for i in open('file.txt').read().split('\n') if i.split(',')] ])
+# print(a)
+d= {}
+for i,j in zip(a, b):
+    d[i] = j
+print(d)
 
 
 
