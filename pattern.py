@@ -61,4 +61,18 @@
 #         print('*' , end=' ')
 #     print()
 
-5. 
+# 5. pattern -5?
+'''
+* * * * *
+  * * * *
+    * * *
+      * *
+        *
+'''
+# n= eval(input('Enter Any Number: '))
+# for i in range(1,n+1):
+#     for j in range(1,i):
+#         print(' ', end=' ')
+#     for k in range(1,n+2-i):
+#         print('*', end=' ')
+#     print()
